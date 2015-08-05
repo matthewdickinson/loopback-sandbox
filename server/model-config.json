@@ -25,5 +25,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Groups": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Customers": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CustomerGroups": {
+    "dataSource": "db",
+    "public": true
   }
 }

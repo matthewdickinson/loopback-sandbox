@@ -1,0 +1,37 @@
+{
+  "name": "Customers",
+  "plural": "Customers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    "firstname": {
+      "type": "string",
+      "required": true,
+      "length": 35,
+      "precision": null,
+      "scale": null
+    }
+  },
+  "validations": [],
+  "relations": {
+    "groups": {
+      "type": "hasMany",
+      "model": "Groups",
+      "foreignKey": "customerId",
+      "through": "CustomerGroups"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

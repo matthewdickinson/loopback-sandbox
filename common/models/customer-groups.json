@@ -1,0 +1,44 @@
+{
+  "name": "CustomerGroups",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    "groupId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    "customerId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "groups": {
+      "type": "belongsTo",
+      "model": "Groups",
+      "foreignKey": "groupId"
+    },
+    "customers": {
+      "type": "belongsTo",
+      "model": "Customers",
+      "foreignKey": "customerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

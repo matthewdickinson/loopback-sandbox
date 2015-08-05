@@ -1,0 +1,33 @@
+{
+  "name": "Groups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0
+    },
+    "name": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customers": {
+      "type": "hasMany",
+      "model": "Customers",
+      "foreignKey": "groupId",
+      "through": "CustomerGroups"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
