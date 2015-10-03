@@ -1,5 +1,5 @@
 {
-  "name": "CustomerGroups",
+  "name": "CustomerGroup",
   "base": "PersistedModel",
   "idInjection": false,
   "properties": {
@@ -30,12 +30,12 @@
   "relations": {
     "groups": {
       "type": "belongsTo",
-      "model": "Groups",
+      "model": "Group",
       "foreignKey": "groupId"
     },
     "customers": {
       "type": "belongsTo",
-      "model": "Customers",
+      "model": "Customer",
       "foreignKey": "customerId"
     }
   },

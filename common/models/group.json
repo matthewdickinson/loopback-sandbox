@@ -1,5 +1,5 @@
 {
-  "name": "Groups",
+  "name": "Group",
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
@@ -23,9 +23,9 @@
   "relations": {
     "customers": {
       "type": "hasMany",
-      "model": "Customers",
+      "model": "Customer",
       "foreignKey": "groupId",
-      "through": "CustomerGroups"
+      "through": "CustomerGroup"
     }
   },
   "acls": [],

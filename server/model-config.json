@@ -26,15 +26,15 @@
     "dataSource": "db",
     "public": false
   },
-  "Groups": {
+  "Group": {
     "dataSource": "db",
     "public": true
   },
-  "Customers": {
+  "Customer": {
     "dataSource": "db",
     "public": true
   },
-  "CustomerGroups": {
+  "CustomerGroup": {
     "dataSource": "db",
     "public": true
   }
