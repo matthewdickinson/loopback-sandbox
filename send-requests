@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+echo "curl http://localhost:3000/api/Customers/1/groups"
+curl http://localhost:3000/api/Customers/1/groups
+echo 
+echo 
+echo "curl http://localhost:3000/api/Customers?filter\\[where\\]\\[id\\]=1'&'filter\\[include\\]=groups"
+curl http://localhost:3000/api/Customers?filter\\[where\\]\\[id\\]=1'&'filter\\[include\\]=groups
+echo
+echo
+echo "curl http://localhost:3000/api/Customers?filter\\[include\\]=groups"
+curl http://localhost:3000/api/Customers?filter\\[include\\]=groups
+echo
+echo
+echo "curl http://localhost:3000/api/CustomerGroups?filter\\[include\\]=groups"
+curl http://localhost:3000/api/CustomerGroups?filter\\[include\\]=groups
+echo
+echo
