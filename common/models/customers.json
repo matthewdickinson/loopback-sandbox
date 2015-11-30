@@ -29,6 +29,7 @@
       "type": "hasMany",
       "model": "Groups",
       "foreignKey": "customerId",
+      "keyThrough": "groupId",
       "through": "CustomerGroups"
     }
   },

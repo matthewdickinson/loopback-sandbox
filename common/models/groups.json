@@ -25,7 +25,8 @@
       "type": "hasMany",
       "model": "Customers",
       "foreignKey": "groupId",
-      "through": "CustomerGroups"
+      "through": "CustomerGroups",
+      "keyThrough": "customerId"
     }
   },
   "acls": [],
